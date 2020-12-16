@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body >
+<img id="pic" style="float: left; height: 500px; width: 400px;" src="OFFbulb.jpg">  <br>
+
+
+<input style="border-style: groove;margin-left: 6%; font-size: 50px; background-color: #3D9970; text-align: center; color:rgb(34, 22, 22);" type="button" id="btn" value="ON" onclick="Bulb();"> 
+
+  <script>
+        function Bulb(){
+
+
+            if(document.getElementById('btn').value=="ON"){
+
+                document.getElementById('pic').src="ONbulb.jpg"
+                document.getElementById('btn').value="OFF"
+
+            }
+            else{
+                document.getElementById('pic').src="OFFbulb.jpg"
+                document.getElementById('btn').value="ON"
+            }
+                
+
+        }
+
+  </script>
+</body>
+</html>
