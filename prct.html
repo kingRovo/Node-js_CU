@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>KingRovo</title>
+</head>
+<body bgcolor="#001f3f">
+
+  <div id = "f" style="border-style: groove; border-radius: 50%; float: left; height: 500px; width:500px; background-color: #3C1975; position:;" ></div>
+  <div id = "s" style="border-style: groove; border-radius: 50%; float: right;height: 500px; width:500px; background-color: #DD354C;" ></div>
+  <input style="border-style: groove;margin-left: 6%; font-size: 50px; background-color: #3D9970; text-align: center; color:rgb(34, 22, 22);" type="button" value="Switch" onclick="fun();"> 
+
+  <script>
+      function fun(){
+          var a = document.getElementById('f').style.backgroundColor
+          var b = document.getElementById('s').style.backgroundColor
+          document.getElementById('f').style.backgroundColor = b;
+          document.getElementById('s').style.backgroundColor = a
+
+
+      }
+
+
+
+  </script>
+</body>
+</html>
